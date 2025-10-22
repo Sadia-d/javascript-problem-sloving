@@ -62,7 +62,7 @@ let balance = 1000;
 
 function deposit(amount) {
     balance += amount;
-    console.log(`${amount} deposited. New balance: ${balance}`)
+    // console.log(`${amount} deposited. New balance: ${balance}`)
 }
 
 function withdraw(amount){
@@ -92,12 +92,42 @@ function checkBalance(){
 
 let start = 7;
 let timer = setInterval(() => {
-    console.log(start);    
+    // console.log(start);    
     start--;
     if(start <= 0){
         clearInterval(timer);
-        console.log('time out')
+        // console.log('time out')
     }
   
     
 }, 1000);
+
+
+/// problem: Shopping Discount System
+// User input: total price
+// Price < 500 → no discount
+// 500–1000 → 10% discount
+// 1000 → 20% discount
+// Output: final price
+
+
+let price = 1000;
+if(price < 500){
+    console.log('no discount')
+}
+
+else if(price >=500 && price <1000){
+     discount =  price * 10 / 100;
+   
+}
+
+else if(price === 1000){
+     discount = price * 20 / 100;
+   
+}
+
+let final = price - discount;
+
+console.log('total price :',price)
+ console.log('discount :' ,discount);
+ console.log('after discount :',final)
