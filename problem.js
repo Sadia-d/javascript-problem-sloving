@@ -128,6 +128,7 @@ else if(price === 1000){
 
 let final = price - discount;
 
-console.log('total price :',price)
- console.log('discount :' ,discount);
- console.log('after discount :',final)
+// console.log('total price :',price)
+//  console.log('discount :' ,discount);
+//  console.log('after discount :',final);
+
